@@ -1,0 +1,48 @@
+{
+  "name": "rescuetime",
+  "displayName": "RescueTime",
+  "description": "Keep tabs on your current Software Development time and focus level from inside VS Code",
+  "icon": "images/logo.png",
+  "galleryBanner": {
+    "color": "#74ccc9",
+    "theme": "light"
+  },
+  "publisher": "RescueTime",
+  "version": "1.0.0",
+  "engines": {
+    "vscode": "^1.33.0"
+  },
+  "homepage": "https://www.rescuetime.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/RescueTime/rescuetime-vscode.git"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "*"
+  ],
+  "main": "./dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "webpack --mode production",
+    "compile": "webpack --mode none",
+    "watch": "webpack --mode none --watch",
+    "test-compile": "tsc -p ./",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/mocha": "^2.2.42",
+    "@types/node": "^10.12.21",
+    "ts-loader": "^5.4",
+    "tslint": "^5.12.1",
+    "typescript": "^3.3.1",
+    "vscode": "^1.1.34",
+    "webpack": "^4.31.0",
+    "webpack-cli": "^3.3.2"
+  },
+  "dependencies": {
+    "@types/request-promise": "^4.1.43",
+    "request-promise": "^4.2.4"
+  }
+}
